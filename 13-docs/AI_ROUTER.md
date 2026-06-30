@@ -555,3 +555,55 @@ Each provider is treated as a specialist inside a company.
 The Routing Engine acts as the Operations Manager, assigning every task to the right specialist, at the right time, with the right context.
 
 This philosophy allows Hermes OS to remain independent from AI trends while continuously improving through accumulated operational intelligence.
+
+# Future Architecture
+
+## Role-Based AI Routing
+
+# Future Architecture
+
+Hermes OS currently routes requests based on capabilities.
+
+Future versions will introduce an additional abstraction layer called Roles.
+
+Instead of assigning work directly to AI providers, Hermes will assign work to operational roles.
+
+Example:
+
+User Request
+
+↓
+
+Chief Executive Officer (CEO)
+
+↓
+
+Research Specialist
+
+↓
+
+AI Router
+
+↓
+
+Google Gemini
+
+↓
+
+Research Specialist
+
+↓
+
+CEO
+
+↓
+
+User
+
+This architecture separates responsibilities from implementation.
+
+Roles remain stable.
+
+Providers remain replaceable.
+
+This enables Hermes to evolve without changing workflows whenever AI models change.
